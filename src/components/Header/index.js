@@ -6,11 +6,27 @@ import "@styles/header.scss"
 const Header = ({ siteTitle }) => (
   <header>
     <div className="header-inner">
-      <h1>
-        <Link to="/" className="site-link">
+      <h1 className="site-title">
+        <Link to="/">
           {siteTitle}
         </Link>
       </h1>
+      <nav className="navigation">
+        <ul>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/work">Works</Link>
+          </li>
+          <li>
+            <Link to="/post">Posts</Link>
+          </li>
+          <li>
+            <Link to="/tag">Tags</Link>
+          </li>
+        </ul>
+      </nav>
     </div>
   </header>
 )
