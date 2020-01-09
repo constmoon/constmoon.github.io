@@ -1,0 +1,30 @@
+.about-wrap {
+  display: flex;
+}
+.about-info {
+  width: 80%;
+  h1 {
+    font-weight: bold;
+  }
+  .desc {
+    margin-top: 1rem;
+    a {
+      text-decoration: underline;
+    }
+    a:hover {
+      color: blue;
+    }
+  }
+}
+.social-links {
+  margin-left: auto;
+  li + li {
+    margin-top: 0.5rem;
+  }
+  i {
+    font-size: 1.5rem;
+  }
+  i:hover {
+    color: blue;
+  }
+}

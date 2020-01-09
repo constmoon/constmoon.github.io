@@ -25,8 +25,6 @@ module.exports = {
         name: `jiwoo`,
         short_name: `jiwoo`,
         start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/assets/images/favicon.png`,
       },
