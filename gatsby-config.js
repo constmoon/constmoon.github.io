@@ -3,6 +3,31 @@ module.exports = {
     title: `jiwoo`,
     description: `blog based on gatsby`,
     author: `constmoon`,
+    name: `강지우, Jiwoo Kang`,
+    siteUrl: `https://constmoon.github.io`,
+    social: {
+      github: `https://github.com/constmoon`,
+      twitter: `https://twitter.com/constmoon`,
+      facebook: `https://www.facebook.com/profile.php?id=1262115677`,
+    },
+    navigation: [
+      {
+        title: `About`,
+        slug: `/about`,
+      },
+      {
+        title: `Works`,
+        slug: `/work`,
+      },
+      {
+        title: `Posts`,
+        slug: `/post`,
+      },
+      {
+        title: `Tags`,
+        slug: `/tag`,
+      },
+    ],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -10,7 +35,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `markdown-pages`,
-        path: `${__dirname}/src/posts`,
+        path: `${__dirname}/src/content`,
       },
     },
     {
@@ -36,11 +61,10 @@ module.exports = {
           "@src": "src",
           "@assets": "src/assets",
           "@components": "src/components",
-          "@layouts": "src/components/layouts",
-          "@templates": "src/components/templates",
           "@pages": "src/pages",
-          "@posts": "src/posts",
+          "@content": "src/content",
           "@styles": "src/styles",
+          "@templates": "src/templates",
         },
         extensions: [
           "js",
