@@ -31,11 +31,27 @@ module.exports = {
         icon: `src/assets/images/favicon.png`,
       },
     },
+    {
+      resolve: `gatsby-plugin-alias-imports`,
+      options: {
+        alias: {
+          "@src": "src",
+          "@assets": "src/assets",
+          "@components": "src/components",
+          "@layouts": "src/components/layouts",
+          "@templates": "src/components/templates",
+          "@pages": "src/pages",
+          "@posts": "src/posts",
+          "@styles": "src/styles",
+        },
+        extensions: [
+          "js",
+        ],
+      }
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-remark`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-sass`,
   ],
 }
