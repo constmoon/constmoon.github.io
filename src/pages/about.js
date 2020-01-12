@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from '@components/Layout';
+import Layout from "@components/layout";
 import "@styles/about.scss";
 
 const AboutPage = ({ data }) => {
@@ -13,13 +13,14 @@ const AboutPage = ({ data }) => {
     <Layout>
       <div className="about-wrap">
         <div className="about-info">
-          <h1>{siteMetadata.name}</h1>
-          <p className="desc">사용자와 서비스를 잇는 인터페이스를 만드는 것에 즐거움을 느끼는 웹 개발자입니다. 기술이 세상을 이롭게 할 수 있는 방법에 관심을 두고 있으며, 시빅해킹 모임인 <a href="https://github.com/NullFull">널채움</a>의 조직원으로도 활동 중입니다.</p>
+          <h1 className="name">{siteMetadata.name}</h1>
+          <a href="mailto:jiiw.kang@gmail.com" className="mail">{siteMetadata.mail}</a>
+          <p className="desc">서비스와 사용자를 잇는 인터페이스를 만들 때 즐거움을 느끼는 웹 개발자입니다. 기술이 세상을 이롭게 할 수 있는 방법에 관심을 두고 있으며, 시빅해킹 커뮤니티 <a href="https://github.com/NullFull">널채움</a>의 조직원으로도 활동 중입니다.</p>
         </div>
         <ul className="social-links">
           {Object.keys(socialLinks).map((key) => (
             <li key={key}>
-              <a href={socialLinks[key]} target="_blank">
+              <a href={socialLinks[key]} target="_blank" rel="noopener noreferrer">
                 <i className={`fa fa-${key}`} />
               </a>
             </li>
@@ -37,6 +38,7 @@ export const query = graphql`
       siteMetadata {
         title
         name
+        mail
         social {
           github
           twitter
