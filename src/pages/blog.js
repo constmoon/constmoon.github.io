@@ -1,10 +1,10 @@
 import React from "react"
 import Layout from "@components/layout"
 
-const Work = () => (
+const Blog = () => (
   <Layout>
-    <h1>Work</h1>
+    <h1>Blog</h1>
   </Layout>
 )
 
-export default Work
+export default Blog

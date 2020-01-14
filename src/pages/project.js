@@ -1,10 +1,10 @@
 import React from "react"
 import Layout from "@components/layout"
 
-const Post = () => (
+const Project = () => (
   <Layout>
-    <h1>Post</h1>
+    <h1>Project</h1>
   </Layout>
 )
 
-export default Post
+export default Project
