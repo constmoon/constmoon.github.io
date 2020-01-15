@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "jiwoo",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "blog based on gatsby",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "jiiw.kang@gmail.com",
   "dependencies": {
     "gatsby": "^2.18.12",
     "gatsby-image": "^2.2.34",
@@ -38,7 +38,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "deploy": "gatsby build && gh-pages -d public -b master -r https://github.com/constmoon/constmoon.github.io",
+    "deploy": "gatsby build && gh-pages -d public -b master",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
