@@ -3,11 +3,17 @@
 }
 .about-info {
   width: 80%;
-  h1 {
+  .name {
     font-weight: bold;
+    font-size: 1.05rem;
+  }
+  .mail {
+    font-size: 0.86rem;
+    color: #666;
+    text-decoration: underline;
   }
   .desc {
-    margin-top: 1rem;
+    margin-top: 1.7rem;
     a {
       text-decoration: underline;
     }

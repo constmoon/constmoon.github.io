@@ -1,0 +1,46 @@
+.project-list {
+  a:hover {
+    text-decoration: underline;
+  }
+}
+.project-container {
+  margin-top: 1rem;
+}
+.project-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.project-content {
+  margin-top: 1rem;
+  h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  p {
+    margin-bottom: 1rem;
+  }
+  a {
+    text-decoration: underline;
+  }
+  a:hover {
+    color: #00f;
+  }
+  table {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 600px) {
+  .project-content {
+    table {
+      width: 100%;
+    }
+    td {
+      display: block;
+      width: 100%;
+    }
+    tr {
+      display: block;
+    }
+  }
+}

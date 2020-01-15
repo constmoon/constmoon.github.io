@@ -2,7 +2,7 @@
   display: flex;
   margin: 0 auto;
   max-width: 960px;
-  padding: 1rem 0;
+  padding: 1.3rem 0;
 }
 .site-title {
   font-size: 1rem;
@@ -16,11 +16,11 @@
   li {
     display: inline-block;
     font-size: 0.95rem;
-    &:hover {
-      text-decoration: underline;
-    }
   }
   li + li {
     margin-left: 1.35rem;
+  }
+  a:hover {
+    text-decoration: underline;
   }
 }

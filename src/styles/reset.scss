@@ -21,8 +21,8 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 h1,
@@ -31,15 +31,17 @@ h3,
 h4,
 h5,
 h6 {
-    font-size: 100%;
-    font-weight: normal;
+  font-size: 100%;
+  font-weight: normal;
 }
 
-ul, li {
-    list-style: none;
+ul,
+li {
+  list-style: none;
 }
 
 a {
+  display: inline-block;
   color: inherit;
   text-decoration: none;
   cursor: pointer;
@@ -49,17 +51,17 @@ button,
 input,
 select,
 textarea {
-    margin: 0;
+  margin: 0;
 }
 
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 img,
@@ -68,43 +70,25 @@ iframe,
 object,
 audio,
 video {
-    display: block;
-    height: auto;
-    max-width: 100%;
+  display: block;
+  height: auto;
+  max-width: 100%;
 }
 
 iframe {
-    border: 0;
+  border: 0;
+  width: 100%;
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 td,
 th {
-    padding: 0;
-    text-align: left;
-}
-
-html {
-    height: 100%;
-    font-size: 18px;
-    -moz-osx-font-smoothing: none;
-    -webkit-font-smoothing: none;
-    text-rendering: optimizeLegibility;
-    -webkit-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    text-size-adjust: 100%;
-    background-color: #dcdcdc;
-}
-
-@media screen and (min-width: 900px) {
-    html {
-        font-size: 22px;
-    }
+  padding: 0;
+  text-align: left;
 }
 
 article,
@@ -114,7 +98,7 @@ footer,
 header,
 hgroup,
 section {
-    display: block;
+  display: block;
 }
 
 button,
@@ -123,34 +107,44 @@ input,
 pre,
 select,
 textarea {
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
 }
 
 code,
 pre {
--moz-osx-font-smoothing: auto;
--webkit-font-smoothing: auto;
-font-family: monospace;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: auto;
+  font-family: monospace;
+}
+
+html {
+  height: 100%;
+  font-size: 18px;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  background-color: #dcdcdc;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    min-height: 100%;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1rem;
-    color: #333;
-    background-color: #dcdcdc;
+  position: relative;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  word-break: keep-all;
+  color: #333;
+  background-color: #dcdcdc;
 }
 
-:lang(en) {
-    line-height: 1.35;
-}
+// :lang(en) {
+//   line-height: 1.35;
+// }
 
-:lang(ko) {
-    line-height: 1.45;
-    word-break: keep-all;
-}
+// :lang(ko) {
+//   line-height: 1.45;
+//   word-break: keep-all;
+// }

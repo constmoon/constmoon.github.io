@@ -1,0 +1,21 @@
+.progress-container{
+  background-color: #fff;
+  padding: 0.6rem;
+  border: 1px solid #000;
+  box-sizing: border-box;
+}
+
+.progress-bar {
+  position: relative;
+  height: 2rem;
+  background-color: #000;
+}
+
+.range {
+  height: 100%;
+  background-color: #75fa4c;
+}
+
+.progress-info {
+  margin-top: 1rem;
+}

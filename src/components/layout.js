@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
         <Header siteTitle={data.site.siteMetadata.title} />
         <main className="main">{children}</main>
         <footer className="footer">
-          © {new Date().getFullYear()},
+          © {new Date().getFullYear()},  
           <a href="mailto:jiiw.kang@gmail.com"> Jiwoo Kang</a>
         </footer>
       </div>
