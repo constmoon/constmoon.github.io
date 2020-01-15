@@ -1,33 +1,16 @@
 module.exports = {
   siteMetadata: {
-    title: `jiwoo`,
+    title: `Jiwoo Kang`,
     description: `blog based on gatsby`,
     author: `constmoon`,
     name: `강지우, Jiwoo Kang`,
+    mail: `jiiw.kang@gmail.com`,
     siteUrl: `https://constmoon.github.io`,
     social: {
       github: `https://github.com/constmoon`,
       twitter: `https://twitter.com/constmoon`,
       facebook: `https://www.facebook.com/profile.php?id=1262115677`,
     },
-    navigation: [
-      {
-        title: `About`,
-        slug: `/about`,
-      },
-      {
-        title: `Works`,
-        slug: `/work`,
-      },
-      {
-        title: `Posts`,
-        slug: `/post`,
-      },
-      {
-        title: `Tags`,
-        slug: `/tag`,
-      },
-    ],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -41,7 +24,30 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: []
+        plugins: [
+          {
+            resolve: `gatsby-remark-embed-video`,
+            options: {
+              maxWidth: 768,
+              height: 432,
+              related: false,
+              noIframeBorder: true
+            },
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 768,
+              wrapperStyle: `margin-top: 1rem;`,
+            },
+          },
+          {
+            resolve: `gatsby-remark-responsive-iframe`,
+            options: {
+              wrapperStyle: `width: 100%; height: 100%; margin-bottom: 1.6rem;`,
+            },
+          },
+        ],
       },
     },
     {
@@ -61,10 +67,11 @@ module.exports = {
           "@src": "src",
           "@assets": "src/assets",
           "@components": "src/components",
+          "@layouts": "src/components/layouts",
+          "@templates": "src/components/templates",
           "@pages": "src/pages",
-          "@content": "src/content",
+          "@posts": "src/posts",
           "@styles": "src/styles",
-          "@templates": "src/templates",
         },
         extensions: [
           "js",
@@ -73,7 +80,6 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-transformer-remark`,
     `gatsby-plugin-sass`,
   ],
 }
