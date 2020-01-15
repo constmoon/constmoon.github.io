@@ -1,8 +1,9 @@
-const path = require("path")
+const path = require("path");
 
-exports.createPages = async ({ actions, graphql, reporter }) => {
+exports.createPages = async ({ actions, graphql }) => {
   const { createPage } = actions
-  const blogPostTemplate = path.resolve(`src/components/templates/post.js`)
+  const blogTemplate = path.resolve(`src/templates/blogTemplate.js`)
+  const projectTemplate = path.resolve(`src/templates/projectTemplate.js`)
   const result = await graphql(`
     {
       allMarkdownRemark(
@@ -12,7 +13,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         edges {
           node {
             frontmatter {
-              path
+              path,
+              category
             }
           }
         }
@@ -20,14 +22,22 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     }
   `)
   if (result.errors) {
-    reporter.panicOnBuild(`Error while running GraphQL query.`)
-    return
+    throw result.errors;
   }
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-    createPage({
-      path: node.frontmatter.path,
-      component: blogPostTemplate,
-      context: {}, // additional data can be passed via context
-    })
+    if(node.frontmatter.category === 'project') {
+      createPage({
+        path: node.frontmatter.path,
+        component: projectTemplate,
+        context: {},
+      })
+    }
+    else {
+      createPage({
+        path: node.frontmatter.path,
+        component: blogTemplate,
+        context: {},
+      })
+    }
   })
 }
