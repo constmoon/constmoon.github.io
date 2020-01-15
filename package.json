@@ -38,7 +38,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "deploy": "gatsby build && gh-pages -d public -b master -r https://github.com/constmoon/constmoon.github.io"
+    "deploy": "gatsby build && gh-pages -d public -b master -r https://github.com/constmoon/constmoon.github.io",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
