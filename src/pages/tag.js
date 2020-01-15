@@ -3,7 +3,7 @@ import Layout from "@components/layout"
 
 const Tag = () => (
   <Layout>
-    <h1>Tag</h1>
+    <p>No Tags Yet</p>
   </Layout>
 )
 
