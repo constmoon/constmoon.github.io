@@ -54,10 +54,6 @@ textarea {
   margin: 0;
 }
 
-html {
-  box-sizing: border-box;
-}
-
 *,
 *:before,
 *:after {
@@ -121,13 +117,14 @@ pre {
 
 html {
   height: 100%;
-  font-size: 18px;
+  font-size: 16px;
   text-rendering: optimizeLegibility;
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
   background-color: #dcdcdc;
+  box-sizing: border-box;
 }
 
 body {
@@ -148,3 +145,14 @@ body {
 //   line-height: 1.45;
 //   word-break: keep-all;
 // }
+
+@media screen and (min-width: 1800px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 900px) {
+  html {
+    font-size: 17px;
+  }
+}
