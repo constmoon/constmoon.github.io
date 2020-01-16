@@ -1,9 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from "@components/layout"
+import SEO from "@components/seo"
 
 const ProjectPage = ({ data }) => (
   <Layout>
+    <SEO title="Project" />
     <ul>
       {data.allMarkdownRemark.edges.map(post => (
         <li key={post.node.id} className="project-list">

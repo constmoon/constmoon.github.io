@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "@components/layout";
+import SEO from "@components/seo";
 import "@styles/about.scss";
 
 const AboutPage = ({ data }) => {
@@ -11,6 +12,7 @@ const AboutPage = ({ data }) => {
   };
   return (
     <Layout>
+      <SEO title="About" />
       <div className="about-wrap">
         <div className="about-info">
           <h1 className="name">{siteMetadata.name}</h1>
