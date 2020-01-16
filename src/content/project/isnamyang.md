@@ -1,5 +1,5 @@
 ---
-path: "/work/isnamynag"
+path: "/project/isnamynag"
 date: "2019-09-12"
 title: "남양유없"
 tags: ["2019"]

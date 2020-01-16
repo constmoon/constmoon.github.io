@@ -1,5 +1,5 @@
 ---
-path: "/work/adocs"
+path: "/project/adocs"
 date: "2018-12-31"
 title: "Adocs"
 tags: ["2019"]

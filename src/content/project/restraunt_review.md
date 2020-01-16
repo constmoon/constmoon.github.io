@@ -1,5 +1,5 @@
 ---
-path: "/work/restaurant-review"
+path: "/project/restaurant-review"
 date: "2017-12-31"
 title: "음식점 가짜리뷰 판별을 위한 기계학습 비교"
 tags: ["2017"]

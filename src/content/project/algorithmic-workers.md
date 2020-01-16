@@ -1,5 +1,5 @@
 ---
-path: "/work/algorithmic-workers"
+path: "/project/algorithmic-workers"
 date: "2018-08-12"
 title: "Algorithmic workers"
 tags: ["2018"]

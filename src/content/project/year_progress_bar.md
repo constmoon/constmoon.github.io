@@ -1,5 +1,5 @@
 ---
-path: "/work/year-progress-bar"
+path: "/project/year-progress-bar"
 date: "2020-01-16"
 title: "올해의 프로그레스 바"
 tags: ["2020"]
