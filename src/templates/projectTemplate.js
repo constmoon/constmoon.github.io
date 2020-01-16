@@ -2,6 +2,7 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import { graphql } from "gatsby"
 import Layout from "@components/layout"
+import SEO from "@components/seo"
 import "@styles/project.scss"
 
 export default function projectTemplate({ data }) {
@@ -9,7 +10,7 @@ export default function projectTemplate({ data }) {
   const tags = post.frontmatter.tags || []
   return (
     <Layout>
-      <Helmet title={`jiwoo - ${post.frontmatter.title}`} />
+      <SEO title={post.frontmatter.title} />
       <div className="project-container">
         <h1 className="project-title">{post.frontmatter.title}</h1>
         <div
