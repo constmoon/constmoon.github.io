@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Jiwoo Kang`,
-    description: `blog based on gatsby`,
+    description: `Jiwoo Kang is a web developer who is passionate about developing interface between service and user. She is interested in how technology can help us in our daily lives.`,
     author: `constmoon`,
     name: `강지우, Jiwoo Kang`,
     mail: `jiiw.kang@gmail.com`,

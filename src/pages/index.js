@@ -5,7 +5,7 @@ import ProgressBarComponent from "@components/progressbar";
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`jiwoo`, `constmoon`, `Jiwoo Kang`]}/>
+    <SEO title="Jiwoo Kang" keywords={[`jiwoo`, `constmoon`, `Jiwoo Kang`]}/>
     <ProgressBarComponent />
   </Layout>
 )
