@@ -10,7 +10,10 @@ export default function projectTemplate({ data }) {
   const tags = post.frontmatter.tags || []
   return (
     <Layout>
-      <SEO title={post.frontmatter.title} />
+      <SEO
+        title={post.frontmatter.title}
+        description={post.excerpt}
+      />
       <div className="project-container">
         <h1 className="project-title">{post.frontmatter.title}</h1>
         <div
@@ -23,19 +26,20 @@ export default function projectTemplate({ data }) {
 }
 export const pageQuery = graphql`
   query ProjectPostByPath($path: String!) {
-        site {
-        siteMetadata {
+    site {
+      siteMetadata {
         title
         author
+      }
     }
-  }
-    markdownRemark(frontmatter: {path: {eq: $path } }) {
-        html
+    markdownRemark(frontmatter: {path: {eq: $path}}) {
+      html
       frontmatter {
         date(formatString: "YYYY-MM-DD")
-      path
-      title
+        path
+        title
+      }
+      excerpt(pruneLength: 200)
     }
   }
-}
 `

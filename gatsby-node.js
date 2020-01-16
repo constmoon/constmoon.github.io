@@ -12,6 +12,8 @@ exports.createPages = async ({ actions, graphql }) => {
       ) {
         edges {
           node {
+            html
+            excerpt(pruneLength: 200)
             frontmatter {
               path,
               category
