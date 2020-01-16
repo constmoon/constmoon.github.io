@@ -9,6 +9,9 @@ category: "project"
 
 ![unknown-1](./img/unknown-1.jpg)
 ![unknown-2](./img/unknown-2.jpg)
+![unknown-3](./img/unknown-3.jpg)
+![unknown-4](./img/unknown-4.jpg)
+![unknown-5](./img/unknown-5.jpg)
 `vimeo: https://player.vimeo.com/video/325804631`
 
 삶은 미지(未知)의 터전. 값을 내기 위해 온 생애를 산화하지만 결국 생애와 분리되는 순간에 이르러 제값을 부여받는 부조리의 터전이다. 태생과 함께 명명된 저마다의 이름은 언뜻 선명한 의미를 갖춘 듯 하나, 연속되는 선택의 순간이 누적되므로 각자의 의미는 점점 값을 알 수 없는 미지의 세계로 치닫게 된다.  
