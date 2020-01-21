@@ -16,6 +16,9 @@
   p {
     margin-bottom: 1rem;
   }
+  p:last-child {
+    margin-bottom: 3rem;
+  }
   a {
     text-decoration: underline;
   }
