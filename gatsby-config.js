@@ -53,8 +53,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `jiwoo`,
-        short_name: `jiwoo`,
+        name: `Jiwoo Kang`,
+        short_name: `Jiwoo Kang`,
         start_url: `/`,
         display: `minimal-ui`,
         icon: `src/assets/images/favicon.png`,
@@ -77,6 +77,12 @@ module.exports = {
           "js",
         ],
       }
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-117255273-3",
+      },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
