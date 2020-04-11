@@ -16,7 +16,7 @@ const AboutPage = ({ data }) => {
       <div className="about-wrap">
         <div className="about-info">
           <h1 className="name">{siteMetadata.name}</h1>
-          <a href="mailto:jiiw.kang@gmail.com" className="mail">{siteMetadata.mail}</a>
+          <a href={`mailto:${siteMetadata.mail}`} className="mail">{siteMetadata.mail}</a>
           <p className="desc">서비스와 사용자를 잇는 인터페이스를 만들 때 즐거움을 느끼는 웹 개발자입니다. 기술로 더 나은 사회를 만들고자 하는 활동에 관심이 많습니다.</p>
         </div>
         <ul className="social-links">

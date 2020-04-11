@@ -4,7 +4,7 @@ module.exports = {
     description: `Jiwoo Kang is a web developer who is passionate about developing interface to connect service with users. She is interested in how technology can help us in our daily lives.`,
     author: `constmoon`,
     name: `강지우, Jiwoo Kang`,
-    mail: `jiiw.kang@gmail.com`,
+    mail: `jiwoo.link@gmail.com`,
     siteUrl: `https://constmoon.github.io`,
     social: {
       github: `https://github.com/constmoon`,
