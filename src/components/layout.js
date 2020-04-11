@@ -13,6 +13,7 @@ const Layout = ({ children }) => {
       site {
         siteMetadata {
           title
+          mail
         }
       }
     }
@@ -28,7 +29,7 @@ const Layout = ({ children }) => {
         <main className="main">{children}</main>
         <footer className="footer">
           © {new Date().getFullYear()},  
-          <a href="mailto:jiiw.kang@gmail.com"> Jiwoo Kang</a>
+          <a href={`mailto:${data.site.siteMetadata.mail}`}> Jiwoo Kang</a>
         </footer>
       </div>
     </>
