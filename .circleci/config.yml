@@ -1,21 +1,27 @@
-version: 2.1
-orbs:
-  node: circleci/node@1.1.6
+version: 2
 jobs:
-  build-and-test:
-    executor:
-      name: node/default
+  build:
+    branches:
+      ignore:
+        - master
+    docker:
+      - image: circleci/node:latest
     steps:
       - checkout
-      - node/with-cache:
-          steps:
-            - run:
-                command: |
-                  git config --global user.email "jiwoo.link@gmail.com"
-                  git config --global user.name "constmoon"
-            - run: npm install
-            - run: npm run deploy
-workflows:
-    build-and-test:
-      jobs:
-        - build-and-test
+      - restore_cache:
+          keys:
+            - node-deps-v1-{{ .Branch }}-{{ checksum "package.json" }}
+            - node-deps-v1-{{ .Branch }}
+            - node-deps-v1
+      - run:
+          command: |
+            git config --global user.email "jiwoo.link@gmail.com"
+            git config --global user.name "constmoon"
+      - run:
+          command: npm install
+      - run:
+          command: npm run deploy
+      - save_cache:
+          key: node-deps-v1-{{ .Branch }}-{{ checksum "package.json" }}
+          paths:
+            - ~/project/node_modules
