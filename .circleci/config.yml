@@ -9,6 +9,10 @@ jobs:
       - checkout
       - node/with-cache:
           steps:
+            - run:
+                command: |
+                  git config --global user.email "jiwoo.link@gmail.com"
+                  git config --global user.name "constmoon"
             - run: npm install
             - run: npm run deploy
 workflows:
