@@ -1,36 +1,30 @@
-.about-wrap {
-  display: flex;
-}
 .about-info {
-  width: 80%;
   .name {
     font-weight: bold;
     font-size: 1.05rem;
   }
   .mail {
-    font-size: 0.86rem;
+    font-size: 0.9rem;
     color: #666;
     text-decoration: underline;
   }
   .desc {
-    margin-top: 1.7rem;
-    a {
-      text-decoration: underline;
-    }
-    a:hover {
-      color: blue;
-    }
+    margin-top: 0.8rem;
   }
 }
 .social-links {
-  margin-left: auto;
-  li + li {
-    margin-top: 0.5rem;
+  margin-top: 1.7rem;
+  a {
+    text-decoration: underline;
+    font-size: 0.9rem;
   }
-  i {
-    font-size: 1.5rem;
-  }
-  i:hover {
+  a:hover {
     color: blue;
+  }
+  li {
+    display: inline-block;
+  }
+  li + li {
+    margin-left: 10px;
   }
 }
