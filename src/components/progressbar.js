@@ -1,11 +1,11 @@
 import React from "react";
 import "@styles/progressbar.scss";
 
-const Range = (props) => {
+const Range = props => {
   return <div className="range" style={{ width: `${props.percentage}%` }} />
 };
 
-const ProgressBar = (props) => {
+const ProgressBar = props => {
   return (
     <div className="progress-bar">
       <Range percentage={props.percentage} />
