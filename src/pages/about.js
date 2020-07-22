@@ -5,7 +5,7 @@ import "@styles/about.scss";
 
 const AboutPage = ({ data }) => {
   const { siteMetadata } = data.site;
-  const resume = siteMetadata.resume;
+  const resumeLink = siteMetadata.resume;
   const socialLinks = {
     GitHub: siteMetadata.social.github,
     Twitter: siteMetadata.social.twitter,
@@ -20,7 +20,7 @@ const AboutPage = ({ data }) => {
         <p className="desc">서비스와 사용자를 잇는 인터페이스를 만들 때 즐거움을 느끼는 웹 개발자입니다. 기술로 더 나은 사회를 만들고자 하는 활동에 관심이 많습니다.</p>
         <ul className="social-links">
           <li>
-            <a href={resume} target="_blank" rel="noopener norefferrer">CV</a>
+            <a href={resumeLink} target="_blank" rel="noopener norefferrer">CV</a>
           </li>
           {Object.keys(socialLinks).map(key => (
             <li key={key}>
