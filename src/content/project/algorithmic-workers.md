@@ -31,4 +31,4 @@ category: "project"
 
 <br />
 
-[프로젝트 링크](http://www.unmakelab.org/blog/2018/08/12/algorithmic-workers-%EB%B2%A0%ED%8B%80%EB%B0%B0%ED%8B%80-%EC%A0%84%EC%8B%9C/)
+[프로젝트 링크](http://www.unmakelab.org/?p=3118)

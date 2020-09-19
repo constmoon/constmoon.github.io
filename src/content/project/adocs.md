@@ -20,4 +20,4 @@ category: "project"
 
 <br />
 
-[웹사이트](https://adocs.co)  [프로젝트 링크](http://everyday-practice.com/portfolio/adocs-website)
+[웹사이트](https://adocs.co) | [프로젝트 링크](http://everyday-practice.com/portfolio/adocs-website)

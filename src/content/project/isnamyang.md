@@ -18,4 +18,4 @@ category: "project"
 
 <br />
 
-[웹사이트](https://isnamyang.nullfull.kr) [GitHub](https://github.com/nullfull/isnamyang)
+[웹사이트](https://isnamyang.nullfull.kr) | [GitHub](https://github.com/nullfull/isnamyang)

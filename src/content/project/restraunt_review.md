@@ -5,8 +5,8 @@ title: "음식점 가짜리뷰 판별을 위한 기계학습 비교"
 tags: ["2017"]
 category: "project"
 ---
-소비자들은 수많은 리뷰를 생산하고 공유하고 있다. 하지만 이 과정에서 일반 소비자들이 작성하는 리뷰와 공급자의 협찬을 받아 편향적으로 작성된 리뷰가 섞이면서 리뷰의 신뢰성이 떨어지고 있다. 소비자들은 ‘거짓 리뷰’를 가려내기 위해 여러 방법을 고안하였지만 확실하지 않은 필터링 방법이다. 본 프로젝트는 보다 효율적이고 정확하게 판단하기 위하여 진짜와 거짓 리뷰 간 통계적으로 유의미한 언어적 차이를 검증하고, 다양한 기계학습을 이용하여 리뷰의 진위를 판별하여 소비자에게 서비스로 제안한다.
-![review_result](./img/review_result.png)
+소비자들은 수많은 리뷰를 생산하고 공유하고 있다. 하지만 이 과정에서 일반 소비자들이 작성하는 리뷰와 공급자의 협찬을 받아 편향적으로 작성된 리뷰가 섞이면서 리뷰의 신뢰성이 떨어지고 있다. 소비자들은 ‘거짓 리뷰’를 가려내기 위해 여러 방법을 고안하였지만 확실하지 않은 필터링 방법이다. 본 프로젝트는 보다 효율적이고 정확하게 판단하기 위하여 진짜와 거짓 리뷰 간 통계적으로 유의미한 언어적 차이를 검증하고, 다양한 기계학습을 이용하여 리뷰의 진위를 판별하여 소비자에게 서비스로 제안한다. 
+![review_result](./img/review.png)
 
 <br />
 
@@ -28,4 +28,4 @@ Python Scikit-learn 패키지를 이용해 SVM, KNN, Naive Bayes, Random Forest 
 2017 성균관대학교 프로그래밍 동아리 Pyneer
 강지우, 김동욱, 송이현, 이범진, 이석범
 
-[Poster](https://drive.google.com/file/d/1kROnEuHqCJR362Ul7MVYF8BpBXH7gCYT/view?usp=sharing) [Paper](http://www.dbpia.co.kr/Journal/ArticleDetail/NODE07322771) [GitHub](https://github.com/constmoon/Restaurant-review)
+[Poster](https://drive.google.com/file/d/1kROnEuHqCJR362Ul7MVYF8BpBXH7gCYT/view?usp=sharing) | [Paper](http://www.dbpia.co.kr/Journal/ArticleDetail/NODE07322771) | [GitHub](https://github.com/constmoon/Restaurant-review)
