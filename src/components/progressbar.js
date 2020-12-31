@@ -2,13 +2,13 @@ import React from "react";
 import "@styles/progressbar.scss";
 
 const Range = props => {
-  return <div className="range" style={{ width: `${props.percentage}%` }} />
+  return <div className="range" style={{ width: `${props.range}%` }} />
 };
 
 const ProgressBar = props => {
   return (
     <div className="progress-bar">
-      <Range percentage={props.percentage} />
+      <Range range={props.percentage} />
     </div>
   );
 };
@@ -27,13 +27,14 @@ const CalculatePercentage = () => {
 
 const ProgressBarComponent = () => {
   const [currentYear, percentage] = CalculatePercentage();
+  const calculatedPercentage = percentage > 100 ? 100 : percentage;
 
   return (
     <>
       <div className="progress-container">
-        <ProgressBar percentage={percentage} />
+        <ProgressBar percentage={calculatedPercentage} />
       </div>
-      <p className="progress-info">{currentYear} is {percentage}% complete.</p>
+      <p className="progress-info">{currentYear} is {calculatedPercentage}% complete.</p>
     </>
   );
 };
