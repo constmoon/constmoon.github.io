@@ -6,7 +6,6 @@ module.exports = {
     name: `강지우, Jiwoo Kang`,
     mail: `jiwoo.link@gmail.com`,
     siteUrl: `https://constmoon.github.io`,
-    resume: `https://www.notion.so/kangjiwoo/CV-60334a38e5b9439aba266981188d1092`,
     social: {
       github: `https://github.com/constmoon`,
       twitter: `https://twitter.com/constmoon`,
