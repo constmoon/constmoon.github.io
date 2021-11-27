@@ -5,7 +5,7 @@ jobs:
       ignore:
         - master
     docker:
-      - image: circleci/node:latest
+      - image: circleci/node:10.15.3
     steps:
       - checkout
       - restore_cache:
