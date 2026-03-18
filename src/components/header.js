@@ -7,9 +7,7 @@ const Header = ({ siteTitle }) => (
   <header>
     <div className="header-inner">
       <h1 className="site-title">
-        <Link to="/">
-          {siteTitle}
-        </Link>
+        <Link to="/">{siteTitle}</Link>
       </h1>
       <nav className="navigation">
         <ul>
@@ -21,9 +19,6 @@ const Header = ({ siteTitle }) => (
           </li>
           <li>
             <Link to="/blog">Blog</Link>
-          </li>
-          <li>
-            <Link to="/tag">Tag</Link>
           </li>
         </ul>
       </nav>
