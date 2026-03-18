@@ -1,8 +1,36 @@
+.notice {
+  margin: 0 0 40px;
+}
 .project-list {
   a:hover {
     text-decoration: underline;
   }
 }
+
+.project-index {
+  margin-top: 16px;
+  color: #b1b1b1;
+}
+
+.project-year-group {
+  margin-bottom: 16px;
+}
+
+.project-year {
+  font-style: italic;
+  margin-bottom: 12px;
+}
+
+.project-year-list {
+  padding-left: 16px;
+}
+
+.project-year-item {
+  list-style: disc;
+  margin-left: 12px;
+  font-size: 16px;
+}
+
 .project-title {
   font-size: 1.3rem;
   font-weight: bold;
