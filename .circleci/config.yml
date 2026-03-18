@@ -5,7 +5,7 @@ jobs:
       ignore:
         - master
     docker:
-      - image: circleci/node:10.15.3
+      - image: cimg/node:20.18
     steps:
       - checkout
       - restore_cache:
@@ -18,9 +18,9 @@ jobs:
             git config --global user.email "jiwoo.link@gmail.com"
             git config --global user.name "constmoon"
       - run:
-          command: npm install
+          command: yarn install
       - run:
-          command: npm run deploy
+          command: yarn deploy
       - save_cache:
           key: node-deps-v1-{{ .Branch }}-{{ checksum "package.json" }}
           paths:
