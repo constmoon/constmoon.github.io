@@ -2,6 +2,20 @@
   a:hover {
     text-decoration: underline;
   }
+  .year {
+    font-style: italic;
+    margin-bottom: 12px;
+  }
+
+  .year-list {
+    padding-left: 16px;
+  }
+
+  .year-item {
+    list-style: disc;
+    margin-left: 12px;
+    font-size: 16px;
+  }
 }
 
 .blog-header {
