@@ -18,6 +18,8 @@ const Layout = ({ children }) => {
       }
     }
   `);
+  const title = data?.site?.siteMetadata?.title ?? "";
+  const mail = data?.site?.siteMetadata?.mail ?? "";
 
   return (
     <>
@@ -25,11 +27,11 @@ const Layout = ({ children }) => {
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
       </Helmet>
       <div className="site">
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Header siteTitle={title} />
         <main className="main">{children}</main>
         <footer className="footer">
           © {new Date().getFullYear()},  
-          <a href={`mailto:${data.site.siteMetadata.mail}`}> Jiwoo Kang</a>
+          <a href={mail ? `mailto:${mail}` : undefined}> Jiwoo Kang</a>
         </footer>
       </div>
     </>

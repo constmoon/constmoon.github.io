@@ -1,4 +1,4 @@
-const path = require("path");
+const path = require("path")
 
 exports.createPages = async ({ actions, graphql }) => {
   const { createPage } = actions
@@ -7,7 +7,7 @@ exports.createPages = async ({ actions, graphql }) => {
   const result = await graphql(`
     {
       allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___date] }
+        sort: { frontmatter: { date: DESC } }
         limit: 1000
       ) {
         edges {
@@ -15,7 +15,7 @@ exports.createPages = async ({ actions, graphql }) => {
             html
             excerpt(pruneLength: 200)
             frontmatter {
-              path,
+              path
               category
             }
           }
@@ -24,21 +24,22 @@ exports.createPages = async ({ actions, graphql }) => {
     }
   `)
   if (result.errors) {
-    throw result.errors;
+    throw result.errors
   }
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-    if(node.frontmatter.category === 'project') {
+  const edges = result?.data?.allMarkdownRemark?.edges ?? []
+  edges.forEach(({ node }) => {
+    if (!node?.frontmatter?.path) return
+    if (node.frontmatter.category === "project") {
       createPage({
         path: node.frontmatter.path,
         component: projectTemplate,
-        context: {},
+        context: { slug: node.frontmatter.path },
       })
-    }
-    else {
+    } else {
       createPage({
         path: node.frontmatter.path,
         component: blogTemplate,
-        context: {},
+        context: { slug: node.frontmatter.path },
       })
     }
   })

@@ -6,33 +6,32 @@ import SEO from "@components/seo"
 import "@styles/project.scss"
 
 export default function projectTemplate({ data }) {
-  const { markdownRemark: post } = data
-  const tags = post.frontmatter.tags || []
+  const post = data?.markdownRemark
+
   return (
-    <Layout>
-      <SEO
-        title={post.frontmatter.title}
-        description={post.excerpt}
-      />
-      <div className="project-container">
-        <h1 className="project-title">{post.frontmatter.title}</h1>
-        <div
-          className="project-content"
-          dangerouslySetInnerHTML={{ __html: post.html }}
-        />
-      </div>
-    </Layout>
+    post && (
+      <Layout>
+        <SEO title={post.frontmatter.title} description={post.excerpt} />
+        <div className="project-container">
+          <h1 className="project-title">{post.frontmatter.title}</h1>
+          <div
+            className="project-content"
+            dangerouslySetInnerHTML={{ __html: post.html }}
+          />
+        </div>
+      </Layout>
+    )
   )
 }
-export const pageQuery = graphql`
-  query ProjectPostByPath($path: String!) {
+export const query = graphql`
+  query ProjectPostBySlug($slug: String!) {
     site {
       siteMetadata {
         title
         author
       }
     }
-    markdownRemark(frontmatter: {path: {eq: $path}}) {
+    markdownRemark(frontmatter: { path: { eq: $slug } }) {
       html
       frontmatter {
         date(formatString: "YYYY-MM-DD")
