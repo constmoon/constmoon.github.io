@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkjiwoo=self.webpackChunkjiwoo||[]).push([[965],{8643:function(e,t,l){l.r(t);var a=l(6540),n=l(1221),c=l(7528);t.default=()=>a.createElement(n.A,null,a.createElement(c.A,{title:"Tag",description:"No Tags Yet"}),a.createElement("p",null,"No Tags Yet"))}}]);
-//# sourceMappingURL=component---src-pages-tag-js-c21756650200316d172a.js.map
