@@ -4,19 +4,24 @@
     font-size: 1.05rem;
   }
   .mail {
-    font-size: 0.9rem;
     color: #666;
     text-decoration: underline;
   }
   .desc {
-    margin-top: 0.8rem;
+    margin-top: 20px;
   }
 }
+
+.container {
+  margin-top: 8px;
+  display: flex;
+  font-size: 14px;
+  gap: 6px;
+}
+
 .social-links {
-  margin-top: 1.7rem;
   a {
     text-decoration: underline;
-    font-size: 0.9rem;
   }
   a:hover {
     color: blue;
@@ -25,6 +30,6 @@
     display: inline-block;
   }
   li + li {
-    margin-left: 10px;
+    margin-left: 6px;
   }
 }
