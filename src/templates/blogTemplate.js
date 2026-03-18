@@ -9,7 +9,10 @@ export default function blogTemplate({ data }) {
 
   return (
     <Layout>
-      <SEO title={`jiwoo - ${post.frontmatter.title}`} />
+      <SEO
+        title={`jiwoo - ${post.frontmatter.title}`}
+        description={post.excerpt}
+      />
       <div className="container">
         <div className="blog-header">
           <h1 className="blog-title">{post.frontmatter.title}</h1>
@@ -33,6 +36,7 @@ export const query = graphql`
     }
     markdownRemark(frontmatter: { path: { eq: $slug } }) {
       html
+      excerpt(pruneLength: 200)
       frontmatter {
         date(formatString: "YYYY-MM-DD")
         path
