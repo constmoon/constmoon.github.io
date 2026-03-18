@@ -9,7 +9,7 @@ module.exports = {
     social: {
       github: `https://github.com/constmoon`,
       twitter: `https://twitter.com/constmoon`,
-      facebook: `https://www.facebook.com/profile.php?id=1262115677`,
+      linkedin: `https://www.linkedin.com/in/jiwoo-kang`,
     },
   },
   plugins: [

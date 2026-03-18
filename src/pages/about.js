@@ -18,7 +18,7 @@ const AboutPage = ({ data }) => {
   const socialLinks = {
     GitHub: siteMetadata.social.github,
     Twitter: siteMetadata.social.twitter,
-    Facebook: siteMetadata.social.facebook,
+    LinkedIn: siteMetadata.social.linkedin,
   }
 
   return (
@@ -37,7 +37,6 @@ const AboutPage = ({ data }) => {
                 <a
                   href={socialLinks[key]}
                   target="_blank"
-                  rel="noopener noreferrer"
                 >
                   {key}
                   {index < Object.keys(socialLinks).length - 1 && (
@@ -69,7 +68,7 @@ export const query = graphql`
         social {
           github
           twitter
-          facebook
+          linkedin
         }
       }
     }
