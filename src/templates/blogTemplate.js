@@ -1,25 +1,23 @@
 import React from "react"
-import { Helmet } from "react-helmet"
 import { graphql } from "gatsby"
 import Layout from "@components/layout"
+import SEO from "@components/seo"
 import "@styles/blog.scss"
 
 export default function blogTemplate({ data }) {
   const post = data?.markdownRemark
 
   return (
-    post && (
-      <Layout>
-        <SEO title={`jiwoo - ${post.frontmatter.title}`} />
-        <div className="post-container">
-          <h1 className="post-title">{post.frontmatter.title}</h1>
-          <div
-            className="post-content"
-            dangerouslySetInnerHTML={{ __html: post.html }}
-          />
-        </div>
-      </Layout>
-    )
+    <Layout>
+      <SEO title={`jiwoo - ${post.frontmatter.title}`} />
+      <div className="container">
+        <h1 className="blog-title">{post.frontmatter.title}</h1>
+        <div
+          className="blog-content"
+          dangerouslySetInnerHTML={{ __html: post.html }}
+        />
+      </div>
+    </Layout>
   )
 }
 export const query = graphql`
