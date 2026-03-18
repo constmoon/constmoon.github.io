@@ -11,7 +11,10 @@ export default function blogTemplate({ data }) {
     <Layout>
       <SEO title={`jiwoo - ${post.frontmatter.title}`} />
       <div className="container">
-        <h1 className="blog-title">{post.frontmatter.title}</h1>
+        <div className="blog-header">
+          <h1 className="blog-title">{post.frontmatter.title}</h1>
+          <div className="blog-date">{post.frontmatter.date}</div>
+        </div>
         <div
           className="blog-content"
           dangerouslySetInnerHTML={{ __html: post.html }}

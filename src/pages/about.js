@@ -26,7 +26,7 @@ const AboutPage = ({ data }) => {
       <SEO title="About" />
       <div className="about-info">
         <h1 className="name">{siteMetadata.name}</h1>
-        <div className="container">
+        <div className="about-container">
           <a href={`mailto:${siteMetadata.mail}`} className="mail">
             {siteMetadata.mail}
             <span>,</span>

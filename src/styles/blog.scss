@@ -4,13 +4,24 @@
   }
 }
 
+.blog-header {
+  margin-bottom: 32px;
+}
+
 .blog-title {
   font-size: 32px;
   font-weight: bold;
-  margin: 0 0 42px;
+}
+
+.blog-date {
+  font-size: 14px;
+  color: #666;
+  margin-top: 12px;
 }
 
 .blog-content {
+  margin-bottom: 48px;
+
   h2 {
     font-size: 24px;
     font-weight: bold;
@@ -62,8 +73,9 @@
 
 @media (max-width: 600px) {
   .blog-title {
-    font-size: 24px;
+    font-size: 32px;
     line-height: 1.3;
+    margin-top: 12px;
   }
 
   .blog-content {
@@ -71,7 +83,7 @@
       font-size: 20px;
     }
     h3 {
-      font-size: 16px;
+      font-size: 18px;
     }
   }
 }
